@@ -6,7 +6,6 @@ environment:
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - ps: npm cache clean --force
   - npm install
 
 build_script:
