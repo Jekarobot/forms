@@ -10,3 +10,9 @@ install:
 
 build_script:
   - npm test
+
+cache: 
+  - node_modules -> package.json
+
+before_install:
+  - npm cache clean --force
